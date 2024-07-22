@@ -1,0 +1,128 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins" , sans-serif;
+}
+body{
+  min-height: 100vh;
+  width: 100%;
+  background: #a4c4b5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container{
+  width: 65%;
+  background: #fff;
+  border-radius: 6px;
+  padding: 20px 60px 30px 40px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.container .content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.container .content .main-side{
+  width: 65%;
+  margin-left: 35px;
+  margin: 30px;
+}
+.content .main-side .topic-text{
+  font-size: 23px;
+  font-weight: 600;
+  color: black;
+}
+.main-side h1{
+    color: darkgreen;
+}
+.main-side .input-box{
+  height: 50px;
+  width: 100%;
+  margin: 12px 0;
+}
+.main-side .input-box input,
+.main-side .input-box textarea{
+  height: 100%;
+  width: 60%;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  background: #F0F1F8;
+  border-radius: 6px;
+  padding: 0 15px;
+  resize: none;
+}
+.main-side .input-box1 input{
+  height: 100%;
+  width: 50%;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  background: #F0F1F8;
+
+}
+.main-side a{
+  font-size: 16px;
+  font-weight: 300;
+  color: black;
+
+}
+.main-side .input-box textarea{
+  padding-top: 8px;
+}
+.main-side .button{
+  display: inline-block;
+  margin-top: 18px;
+}
+.main-side .button input[type="button"]{
+  color: #fff;
+  font-size: 18px;
+  outline: none;
+  border: none;
+  padding: 6px 16px;
+  border-radius: 6px;
+  background: darkslategrey;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.button input[type="button"]:hover{
+  background: darkgreen;
+  box-shadow: 0 2px 4px rgba(0, 0, 255, 0.3);
+}
+@media (max-width: 950px) {
+  .container{
+    width: 90%;
+    padding: 30px 40px 40px 35px ;
+  }
+  .container .content .right-side{
+   width: 75%;
+   margin-left: 55px;
+}
+}
+@media (max-width: 820px) {
+  .container{
+    margin: 40px 0;
+    height: 100%;
+  }
+  .container .content{
+    flex-direction: column-reverse;
+  }
+ .container .content .left-side{
+   width: 100%;
+   flex-direction: row;
+   margin-top: 40px;
+   justify-content: center;
+   flex-wrap: wrap;
+ }
+ .container .content .left-side::before{
+   display: none;
+ }
+ .container .content .right-side{
+   width: 100%;
+   margin-left: 0;
+ }
+}
